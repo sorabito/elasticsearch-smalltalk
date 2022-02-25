@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Elasticsearch-Core",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

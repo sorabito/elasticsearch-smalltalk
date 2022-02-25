@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"field",
-		"modifiers"
+		"modifiers",
+		"settings"
 	],
 	"name" : "ESQuery",
 	"type" : "normal"
