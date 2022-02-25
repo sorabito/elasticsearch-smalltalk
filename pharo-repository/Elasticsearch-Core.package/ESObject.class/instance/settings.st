@@ -1,3 +1,3 @@
 accessing
 settings
-	^ settings
+	^ settings ifNil: [ settings := ESSettings default ]
