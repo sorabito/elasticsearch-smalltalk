@@ -5,7 +5,7 @@ defaultField
 	].
 	self settings shouldWarnUsingAllField ifTrue: [ 
 		| msg |
-		msg := '!!ES obsolete default-field (all) is used in {1}' format: {self className}.
+		msg := '!!ES: "all" field is used in {1}, instead of obsolete "_all" field.' format: {self className}.
 		self traceCr: msg.
 		Notification signal: msg.
 	].
