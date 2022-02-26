@@ -9,7 +9,8 @@ deleteFromIndex: anESIndex
 	self
 		ifResponse: json
 		isNotErrorThenDo: [ :someJson | 
-			(someJson at: 'found')
+			((someJson at: 'result' ifAbsent: ['']) = 'found' 
+					or: [(someJson at: 'found' ifAbsent: [false])])
 				ifTrue: [ 
 					self id: (someJson at: '_id').
 					self version: (someJson at: '_version') asNumber ] ]
