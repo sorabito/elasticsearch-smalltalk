@@ -19,4 +19,4 @@ testJsonQuery2
 	self
 		assert: result
 		equals:
-			'{"query":{"bool":{"should":[{"match":{"_all":{"query":"Tuna","type":"phrase"}}},{"match":{"_all":"Tuna"}}],"minimum_should_match":1}}}'
+			'{"query":{"bool":{"should":[{"match_phrase":{"_all":"Tuna"}},{"match":{"_all":"Tuna"}}],"minimum_should_match":1}}}'
