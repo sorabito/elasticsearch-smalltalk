@@ -4,7 +4,7 @@ testJsonQuery1
 	index := ESIndex indexNamed: 'sushi_store'.
 	index type: 'sushi'.
 	search := ESSearch new index: index.
-	query1 := ESMatchQuery new matchPhrase.
+	query1 := ESMatchPhraseQuery new.
 	query1 query: 'Tuna'.
 	query2 := ESMatchQuery new.
 	query2 query: 'Tuna'.
@@ -29,4 +29,4 @@ testJsonQuery1
 	self
 		assert: result
 		equals:
-			'{"sort":[{"_score":{"order":"desc"}},{"title":{"order":"desc"}}],"query":{"bool":{"should":[{"match":{"_all":{"query":"Tuna","type":"phrase"}}},{"match":{"_all":"Tuna"}}],"minimum_should_match":1}}}'
+			'{"sort":[{"_score":{"order":"desc"}},{"title":{"order":"desc"}}],"query":{"bool":{"should":[{"match_phrase":{"_all":"Tuna"}},{"match":{"_all":"Tuna"}}],"minimum_should_match":1}}}'

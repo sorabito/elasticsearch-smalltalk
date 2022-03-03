@@ -1,3 +1,4 @@
 accessing
-type: aByteString 
-	type:=aByteString 
+type: aByteString
+	(self settings afterV6 and: [ self settings shouldIgnoreTypeField ]) ifTrue: [ ^self ].
+	type := aByteString 
