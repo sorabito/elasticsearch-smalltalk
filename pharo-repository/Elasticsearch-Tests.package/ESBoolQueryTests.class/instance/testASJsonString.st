@@ -1,7 +1,7 @@
 tests-printing
 testASJsonString
 	| query1 query2 booleQuery |
-	query1 := ESMatchQuery new matchPhrase.
+	query1 := ESMatchPhraseQuery new.
 	query1 query:'Tuna'.
 
 	query2 := ESMatchQuery new.

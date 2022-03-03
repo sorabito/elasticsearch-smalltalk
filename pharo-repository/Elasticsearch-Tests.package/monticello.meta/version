@@ -1,3 +1,0 @@
-(name 'Elasticsearch-Tests-MasashiUmezawa.1564618646' message 'empty log message' id '8007d10b-664b-0d00-b350-c6730cad9252' date '1 August 2019' time '10:39:14.23524 am' author 'MasashiUmezawa' ancestors ((name 'Elasticsearch-Tests-GitHub.1564618645' message 'Merge pull request #4 from sorabito/feature/UseMoreSTON
-
-Migrating to use STON' id '8d90a268-7938-5273-9642-f0784e9d3442' date '1 August 2019' time '9:17:25 am' author 'GitHub' ancestors () stepChildren ())) stepChildren ())

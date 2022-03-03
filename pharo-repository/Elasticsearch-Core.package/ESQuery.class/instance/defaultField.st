@@ -1,6 +1,6 @@
 defaults
 defaultField
-	self settings supportV8 ifFalse: [ 
+	self settings afterV6 ifFalse: [ 
 		^'_all'
 	].
 	self settings shouldWarnUsingAllField ifTrue: [ 

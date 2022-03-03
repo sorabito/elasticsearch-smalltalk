@@ -4,7 +4,7 @@ testJsonQuery1
 	index := ESIndex indexNamed: 'sushi_store'.
 	index type: 'sushi'.
 	search := ESSearch new index: index.
-	query1 := ESMatchQuery new matchPhrase.
+	query1 := ESMatchPhraseQuery new.
 	query1 query: 'Tuna'.
 	query2 := ESMatchQuery new.
 	query2 query: 'Tuna'.

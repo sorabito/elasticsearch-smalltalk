@@ -1,11 +1,10 @@
 tests-printing
 testModifiedJson
 	| query |
-	query := ESMatchQuery new
+	query := ESMatchPhrasePrefixQuery new
 		query: 'donkey';
 		fuzziness: 0.5;
 		field: 'message';
-		matchPhrasePrefix;
 		yourself.
 	self
 		assert: query asJsonString
