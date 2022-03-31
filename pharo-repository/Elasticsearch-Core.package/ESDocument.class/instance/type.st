@@ -1,4 +1,3 @@
 accessing
 type
-	
-	^ type ifNil:['noType']
+	^ type ifNil:['_doc']
